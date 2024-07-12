@@ -1,0 +1,2104 @@
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+.whatsapp {
+  width: 55px;
+  position: fixed;
+  left: 20px;
+  bottom: 10px;
+  z-index: 55;
+}
+
+.line {
+ display: block;
+ width: 150px;
+ border: 1px solid rgb(191, 255, 0);
+ margin: auto;
+
+}
+
+.contact textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.contact input:focus, .contact textarea:focus{
+  background-color: rgb(254, 255, 181);
+  color: rgb(10, 10, 5);
+  outline: 3px rgb(255, 50, 50) solid;
+  
+}
+
+.contact ::placeholder {
+  color: brown;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.quoteform {
+  overflow: hidden;
+  font-family:'Sawarabi Mincho', serif ;
+}
+
+.qbtnc {
+  display: flex;
+  width: 50%;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.quoteform button {
+  background-color: rgb(255, 255, 198);
+  color: red;
+  border-color: rgb(255, 0, 0);
+  margin: 5px;
+  font-size: 18px;
+  height: 40px;
+}
+
+.quoteform button:hover {
+  background-color:  red;
+  color:rgb(255, 255, 198) ;
+  text-decoration: underline;
+}
+
+
+.qtextarea {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  resize: none;
+  padding: 5px;
+  font-size: inherit;
+}
+.qtextarea::placeholder {
+  font-size: 14px;
+}
+.qtcontainer {
+  margin-top: 30px;
+}
+.quoteform .qicontainer {
+  position: relative;
+  
+}
+.quoteform input {
+  outline: none;
+ width: 100%;
+ height: 100%;
+ padding-top: 20px;
+ border: none;
+ margin: 20px 0;
+
+}
+
+.quoteform .ilabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+pointer-events: none;
+border-bottom: 1px solid black;
+overflow-y: hidden;
+}
+
+.ilabel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translate(-100%);
+  transition: transform .3s ease ;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all .3s ease;
+}
+.quoteform input:focus + .ilabel .content-name, .quoteform input:valid + .ilabel .content-name {
+  transform: translateY(-150%);
+  font-size: 16px;
+  color: #5fa8d3;
+}
+
+.quoteform input:not(:placeholder-shown) + .ilabel .content-name {
+  transform: translateY(-150%);
+  font-size: 16px;
+  color: #5fa8d3;
+}
+
+.quoteform input:focus +.ilabel::after , .quoteform input:valid + .ilabel::after {
+  transform: translateX(0%);
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  height: 3rem;
+  padding: 10px;
+  border-bottom: 2px white solid;
+}
+
+
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  list-style: none;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.2rem;
+}
+
+.link :hover {
+  color: rgb(255, 180, 118);
+  text-decoration: underline;
+
+}
+
+.main {
+  background-image: url('../public/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+color: rgb(255, 255, 255);
+text-shadow: 3px 3px 3px red;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.introline {
+  font-size: 1.34rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+overflow: hidden;
+ padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  width: 100%;
+  color: black;
+  text-shadow: none;
+  font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.dummy {
+  height: 20px;
+  width: 100%;
+}
+.logo {
+  height: 400px;
+  margin-left: 2rem;
+
+}
+
+.typewriter {
+  margin-left: 6px;
+}
+
+.intro {
+
+  border-radius: 10px;
+text-align: center;
+width: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.name {
+  font-size: 3rem;
+  text-align: center;
+ 
+}
+
+.info {
+  padding: 20px 0;
+  display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(224, 240, 255,.4);
+margin-top: 70px;
+/* font-family: 'Graduate', cursive; */
+/* font-family: Sylfaen; */
+font-family: 'Merriweather', serif;
+border: 5px solid red;
+}
+
+.services {
+  font-family: 'Sawarabi Mincho', serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+margin-bottom: 50px;
+}
+
+.services .title {
+  font-size: 3rem;
+  margin: 25px 0;
+}
+
+.item img {
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  border-bottom: 4px orange solid;
+}
+
+.sdetail {
+  overflow: hidden;
+  /* background-image: url('../public/images/bg7.jpg'); */
+  background: linear-gradient(90deg, rgba(33, 203, 250,.3) 0%, rgba(146, 254, 157,.3) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.workdone {
+  width: 80%;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  background-color: rgb(255, 77, 77,.5);
+  color : rgb(255, 255, 255);
+  text-align: center;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+ 
+}
+
+.item h3 {
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: rgb(255, 165, 165, .5);
+  color: rgb(80, 80, 80);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border-bottom: 2px red solid;
+  border-top: 2px blue solid;
+}
+
+.contact {
+  background-image: url('../public/images/contact1.jpg');
+height: 600px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+}
+
+.getit {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  
+}
+
+.form {
+  background-color: rgba(109, 109, 109, 0.5);
+  width: 50%;
+  height: 400px;
+  padding: 20px;
+  margin: 20px 0;
+border-radius: 10px;
+}
+
+.contact, .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contact input, textarea, button {
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 5px;
+font-family: 'Roboto Mono', monospace;
+}
+
+input {
+ height: 40px;  
+}
+
+button {
+  background-color: rgb(67, 65, 65);
+  color: white;
+  height: 50px;
+}
+
+ /* About us */
+
+ .atd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  margin: 40px 0;
+}
+.about {
+  width: 50%;
+  background-color: rgb(243, 134, 134);
+ padding: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.atitle {
+  -webkit-writing-mode : vertical-rl;
+writing-mode: vertical-rl;
+-webkit-text-orientation: upright;
+text-orientation: upright;
+background-color: rgb(186, 223, 255);
+height: 80%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.adetail {
+  /* background-image: url('../public/images/about.jpg'); */
+  background-color: rgba(255, 240, 240, 0.5);
+  color: white;
+    font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+text-align: left;
+border-radius: 5px;
+font-family: 'Sawarabi Mincho', serif;
+
+}
+
+.adetail p {
+  font-size: 1.3rem;
+}
+
+
+.bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+padding: 20px;
+  margin: 30px 0;
+  background: linear-gradient(90deg, rgb(182, 65, 255,.5) 0%, rgb(81, 90, 218, .5) 100%);
+  color : rgb(255, 238, 0);
+  text-align: center;
+}
+
+.bari {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.bari img {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.testimonials {
+  /* background: rgb(131,58,180); */
+/* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+margin-bottom: 50px;
+  height: 600px;
+
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ttitle {
+  font-size: 3rem;
+}
+
+.swiper {
+  /* background: rgb(34,193,195); */
+background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  width: 60%; 
+  height: 400px;
+  font-family: 'Sawarabi Mincho', serif;
+
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+border-radius: 10px;
+}
+
+.sslide {
+ 
+display: flex;
+align-items: center;
+justify-content: center;
+  padding: 50px;
+}
+.scontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(249, 235, 229,.5);
+width: 80%;
+height: 300px;
+padding: 10px;
+border-radius: 10px;
+}
+
+
+.flist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.ftitle, .ctitle {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flc, .slc {
+  height: 250px;
+  /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);  */
+  background: linear-gradient(90deg, rgb(255, 105, 105,.5) 0%, rgb(140, 200, 100,.5) 100%); 
+  /* background-color: rgba(255, 156, 156, 0.5);  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: rgb(81, 81, 81);
+  flex-direction: column;
+  font-family: 'Sawarabi Mincho', serif;
+
+}
+
+.slist {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: rgb(155, 0, 0);
+  text-align: center;
+  font-family: 'Sawarabi Mincho', serif;
+}
+
+.footer h4 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+
+.fadd, .fcontact, .fohour, .fmail {
+  text-align: center;
+  width: 100%;
+  height:18.5rem;
+padding: 10px;
+color: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+border: 2px yellow solid;
+}
+
+
+
+
+
+.fadd h2 , .fcontact h2 , .fohour h2, .fmail h2 {
+  margin-bottom: 20px;
+  padding: 3px;
+  border-bottom: 3px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fmail h3 {
+  font-size: 1.5rem;
+}
+
+
+.callbtn, .directionbtn, .quotebtn, .mailbtn {
+  background-color: rgb(255, 255, 198) ;
+  width: 100%;
+  color: red;
+  font-weight: bold;
+  font-family: 'Sawarabi Mincho', serif;
+height: max-content;
+border: 2px solid rgb(253, 232, 0);
+border-radius: 5px;
+
+}
+
+.quotebtn {
+  width: max-content;
+}
+
+.callbtn:hover, .directionbtn:hover, .quotebtn:hover, .mailbtn:hover {
+  background-color:  rgb(255, 255, 255);
+  color:maroon ;
+  text-decoration: underline;
+}
+
+.copyright {
+  background-color: rgb(33, 30, 30);
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.phone, .location, .time, .mail {
+  height: 40px;
+  padding: 0;
+margin-right: 10px;
+
+
+}
+
+.wcui img {
+height: 80px;
+}
+
+.comtitle  {
+ 
+  /* background:linear-gradient(90deg, #0700b8 0%, #00ff88 100%);  */
+ border-bottom: 5px solid hotpink;
+ border-top: 5px solid chartreuse;
+ width: max-content;
+ margin: auto;
+ text-align: center;
+ padding: 5px;
+ /* font-family: 'Black Ops One', cursive; */
+/* font-family: 'Caveat', cursive;
+font-family: 'Roboto Mono', monospace; */
+font-family: 'Roboto Slab', serif;
+
+/* font-family: 'Sawarabi Mincho', serif; */
+}
+
+.atitle {
+  margin: 0;
+}
+
+.link {
+  cursor: pointer;
+}
+
+
+.navbtn2 {
+ color:rgb(60,60,60) ;
+ background-color: white;
+font-size: 1.4rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.hambtn {
+ width: 300px;
+
+ 
+}
+
+.hambtn:hover {
+  background-color: rgb(0, 0, 0);
+
+  color: white;
+}
+
+
+
+
+
+/* Hamburger button */
+
+.hamburgercontain {
+ /* display: none; */
+ position: relative;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.hamburgercontain button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.hamburgerc a {
+  color: white;
+  font-weight: bold;
+}
+
+.hamburgerc {
+  margin-top: 50px;
+  height: 600px;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+text-align: center;
+z-index: 2;
+background-color: rgb(60,60,60);
+
+
+}
+
+.nohamburgerc {
+  display: none;
+}
+
+.hamburgerc .link {
+  /* border-bottom: 3px solid rgb(233, 233, 233); */
+width: 100%;
+text-align: center;
+padding: 5px 0;
+
+}
+
+.hamburgericon {
+  height: 50px;
+  display: none;
+}
+
+.icon {
+ position: absolute;
+ top: 0;
+ margin: 5px 5px;
+ font-size: 2.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for mobile responsive */
+
+@media screen and (max-width : 300px) and (min-width : 150px) {
+ 
+  .navbar {
+    display: none;
+  }
+
+  
+ 
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 500px;
+ background-size: cover;
+  }
+  
+  .logo {
+    height: 100px;
+ 
+  }
+
+  .hamburgerc {
+    font-size: 1rem;
+    height: 200px ;
+  }
+
+  .navbtn2 {
+    font-size: 1rem;
+    height: 40px;
+  }
+ 
+  .hamburgericon {
+    display: block;
+    height: 30px;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  
+
+.introline h2{
+  font-size: .8rem;
+  
+}
+
+  .name {
+  padding: 3px;
+margin-top: 10px;
+  }
+
+  .name h1 {
+    font-size: .8rem;
+  }
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+ margin-bottom: 50px;
+ margin-top: 20px;
+  }
+
+
+  /* About Section  */
+  .atd {
+    height: 800px;
+  }
+  
+    .about {
+      width: 99%;
+      height: 99%;
+      padding: 0;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  
+    .atitle {
+      writing-mode: horizontal-tb;
+      font-size: 1rem;
+      height: 65px;
+      width: 90%;
+      overflow: hidden;
+    }
+  
+    .adetail {
+      width: 90%;
+      height: 90%;
+      padding: 10px;
+    
+    }
+  
+
+  .adetail p {
+    font-size: .9rem;
+    padding: 2px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 99%;
+    grid-template-columns: 1fr;
+  }
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+/* focus section  */
+/* select us section  */
+
+
+.flc ,.slc {
+  font-size: 1.4rem;
+}
+
+  .flist, .slist {
+    grid-template-columns: 1fr;
+  }
+
+  .bar {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Testimonial section  */
+
+.sslide {
+  padding: 30px;
+}
+
+.swiper {
+  width: 99%;
+
+}
+
+
+
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.2rem;
+}
+
+.scontent p {
+  font-size: .8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr;
+}
+
+.fmail{
+  height:12rem;
+} 
+
+.fadd h3, .fcontact h3, .fohour h3,  .fmail h3 {
+  font-size: .8rem;
+}
+
+.fadd h2, .fcontact h2, .fohour h2, .fmail h2 {
+  font-size: 1rem;
+}
+
+.fadd , .fcontact , .fohour {
+width: 100%;
+}
+.callbtn, .directionbtn, .quotebtn {
+  font-size: .7rem;
+}
+.copyright h3 {
+  font-size: 1.1rem;
+}
+
+.comtitle {
+  font-size: 2.1rem;
+}
+
+.atitle {
+  font-size: 1rem;
+}
+
+}
+
+
+
+
+@media screen and (max-width : 400px) and (min-width : 300px) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 550px;
+ background-size: cover;
+
+  }
+.dummy {
+  height: 10px;
+}
+  
+  .hamburgericon {
+    display: block;
+  }
+  
+
+.navbar {
+  display: none;
+}
+  
+  .logo {
+    height: 200px;
+  
+  }
+.introline {
+  font-size: .8rem;
+margin-bottom: 30px;
+}
+  
+
+  .name {
+    font-size: 1.05em;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+
+  /* About Section  */
+  .atd {
+    height: 800px;
+  }
+  
+    .about {
+      width: 99%;
+      height: 99%;
+      padding: 0;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  
+    .atitle {
+      writing-mode: horizontal-tb;
+      font-size: 1rem;
+      height: 65px;
+      width: 90%;
+      overflow: hidden;
+    }
+  
+    .adetail {
+      width: 90%;
+      height: 90%;
+      padding: 10px;
+    
+    }
+  
+    .adetail p {
+      font-size: 1.1rem;
+      padding: 2px;
+      overflow: hidden;
+      text-align: center;
+    }
+  /*  Services section  */
+
+  .sdetail {
+    width: 99%;
+    grid-template-columns: 1fr;
+  }
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+/* focus section  */
+/* select us section  */
+
+  .flist, .slist {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .slc, .flc {
+    font-size: 1.8rem;
+  }
+
+
+  .bar {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 99%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h2 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr;
+}
+
+.fcontact, .fadd , .fohour  {
+  overflow: hidden;
+}
+
+
+
+.copyright h3 {
+  font-size: 1rem;
+}
+
+.ctitle {
+  font-size: 2.2rem;
+}
+}
+
+
+
+
+@media screen and (max-width : 600px) and (min-width : 400px) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 650px;
+ background-size: cover;
+
+  }
+
+  .dummy {
+    height: 10px;
+  margin-top: 0;
+  }
+  
+  .hamburgericon {
+    display: block;
+  }
+  
+
+.navbar {
+  display: none;
+}
+  
+  .logo {
+    height: 200px;
+  
+  }
+.introline {
+  font-size: .94rem;
+margin-top: 2px;
+}
+  
+
+  .name {
+    font-size: 1.3rem;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  margin-top: 20px;
+  }
+
+
+  /* About Section  */
+.atd {
+  height: 800px;
+}
+
+  .about {
+    width: 99%;
+    height: 99%;
+    padding: 0;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .atitle {
+    writing-mode: horizontal-tb;
+    font-size: 1rem;
+    height: 65px;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .adetail {
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+  
+  }
+
+  .adetail p {
+    font-size: 1.18rem;
+    padding: 2px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 99%;
+    grid-template-columns: 1fr;
+  }
+
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+
+/* focus section  */
+/* select us section  */
+
+  .flist, .slist {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .slc, .flc {
+    font-size: 1.8rem;
+  }
+
+
+  .bar {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 99%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr;
+}
+
+.fmail{
+  height:12rem;
+} 
+.fcontact, .fadd , .fohour  {
+  overflow: hidden;
+}
+
+
+
+.copyright h3 {
+  font-size: 1rem;
+}
+
+.ctitle {
+  font-size: 2.5rem;
+}
+}
+
+
+
+
+@media screen and (max-width : 700px) and (min-width : 600px) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 700px;
+ background-size: cover;
+
+  }
+
+
+
+  .dummy {
+    height: 10px;
+  }
+  
+  .hamburgericon {
+    display: block;
+  }
+  
+
+.navbar {
+  display: none;
+}
+  
+  .logo {
+    height: 200px;
+  
+  }
+.introline {
+  font-size: 1.1rem;
+
+}
+  
+
+  .name {
+    font-size: 1.5rem;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 100px;
+  }
+
+
+  /* About Section  */
+.atd {
+  height: 800px;
+}
+
+  .about {
+    width: 99%;
+    height: 99%;
+    padding: 0;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .atitle {
+    writing-mode: horizontal-tb;
+    font-size: 1rem;
+    height: 65px;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .adetail {
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+  
+  }
+
+  .adetail p {
+    font-size: 1.18rem;
+    padding: 2px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 99%;
+    grid-template-columns: 1fr;
+  }
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+
+/* focus section  */
+/* select us section  */
+
+  .flist, .slist {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .slc, .flc {
+    font-size: 1.8rem;
+  }
+
+
+  .bar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 99%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr;
+}
+
+.fmail{
+  height:12rem;
+} 
+.fcontact, .fadd , .fohour  {
+  overflow: hidden;
+}
+
+
+
+.copyright h3 {
+  font-size: 1rem;
+}
+
+.ctitle {
+  font-size: 2.5rem;
+}
+}
+
+
+
+
+
+@media screen and (max-width : 835px) and (min-width :700px ) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 700px;
+ background-size: cover;
+  }
+  
+.introline {
+  margin-top: 45px;
+}
+
+  .logo {
+    height: 300px;
+    margin: 0;
+  }
+  .name {
+    font-size: 1.5rem;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  /* About Section  */
+.atd {
+  height: 900px;
+}
+
+  .about {
+    width: 90%;
+    height: 90%;
+    padding: 0;
+  }
+
+  .atitle {
+    height: 100%;
+  }
+
+  .adetail {
+    height: 80%;
+  }
+
+  .adetail p {
+    font-size: 1.3rem;
+    padding: 2px;
+    overflow: hidden;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .nine {
+grid-column: -1/1;
+  }
+
+/* focus section  */
+
+.flist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+}
+
+.flc {
+  width: 80%;
+}
+/* select us section  */
+
+  .slist {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 80%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr;
+}
+
+.fadd, .fcontact, .fohour {
+
+font-size: 1.2rem;
+overflow: hidden;
+}
+
+.copyright h3 {
+  font-size: 1.1rem;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width : 950px) and (min-width :835px ) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 700px;
+ background-size: cover;
+  }
+  
+.introline {
+  margin-top: 45px;
+}
+
+  .logo {
+    height: 300px;
+    margin: 0;
+  }
+  .name {
+    font-size: 2rem;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  /* About Section  */
+.atd {
+  height: 900px;
+}
+
+  .about {
+    width: 90%;
+    height: 90%;
+    padding: 0;
+  }
+
+  .atitle {
+    height: 100%;
+  }
+
+  .adetail {
+    height: 80%;
+  }
+
+  .adetail p {
+    font-size: 1.3rem;
+    padding: 2px;
+    overflow: hidden;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .nine {
+grid-column: -1/1;
+  }
+
+/* focus section  */
+
+.flist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+}
+
+.flc {
+  width: 80%;
+}
+/* select us section  */
+
+  .slist {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 80%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr 1fr;
+}
+
+.fadd, .fcontact, .fohour {
+
+font-size: 1.1rem;
+overflow: hidden;
+}
+
+
+.copyright h3 {
+  font-size: 1.1rem;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width : 1050px) and (min-width :950px ) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 700px;
+ background-size: cover;
+  }
+  
+  .logo {
+    height: 300px;
+    margin: 0;
+  }
+  .name {
+    font-size: 2rem;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .introline {
+    margin-top: 50px;
+  }
+
+  /* About Section  */
+.atd {
+ height: 70%;
+ margin: 30px 0;
+
+}
+
+  .about {
+    width: 70%;
+ overflow: hidden;
+    padding: 0;
+  }
+
+  .atitle {
+    height: 100%;
+  }
+
+  .adetail {
+    height: 90%;
+  
+  }
+
+  .adetail p {
+    font-size: 1.8rem;
+    padding: 2px;
+    overflow: hidden;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 99%;
+  }
+
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+
+/* focus section  */
+/* select us section  */
+
+  .slist {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 80%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+
+.footerinfo {
+  grid-template-columns: 1fr 1fr;
+}
+
+.copyright h3 {
+  font-size: 1.1rem;
+}
+}
+
+
+
+
+
+@media screen and (max-width : 1250px) and (min-width :1050px ) {
+  /* Main Section */
+  .main {
+    justify-content: center;
+    height: 700px;
+ background-size: cover;
+  }
+  
+  .logo {
+    height: 300px;
+    margin: 0;
+  }
+  .name {
+    font-size: 2rem;
+  padding: 3px;
+margin-top: 10px;
+  }
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .introline {
+    margin-top: 50px;
+  }
+
+  /* About Section  */
+.atd {
+ height: 70%;
+ margin: 30px 0;
+
+}
+
+  .about {
+    width: 70%;
+ overflow: hidden;
+    padding: 0;
+  }
+
+  .atitle {
+    height: 100%;
+  }
+
+  .adetail {
+    height: 90%;
+  
+  }
+
+  .adetail p {
+  font-size: 1.8rem;
+    padding: 2px;
+    overflow: hidden;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 99%;
+  }
+
+
+  .workdone {
+    width: 99%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(255, 77, 77,.5);
+    color : rgb(255, 255, 255);
+    text-align: center;
+  }
+
+
+/* focus section  */
+/* select us section  */
+
+  .slist {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonial section  */
+
+.swiper {
+  width: 80%;
+}
+.scontent {
+  width: 100%;
+}
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+/* Contact us Section  */
+
+.form {
+  width: 90%;
+}
+
+/* Footer Section  */
+.footerinfo {
+  grid-template-columns: 1fr 1fr;
+}
+
+.copyright h3 {
+  font-size: 1.1rem;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 1300px ) and (min-width : 1250px) {
+  /* Main Section */
+
+  
+  
+  
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  /* About Section  */
+
+
+  .about {
+ width: 60%;
+    padding: 0;
+  }
+
+  .atitle {
+    height: 100%;
+  }
+  
+
+  .adetail {
+    padding: 5px;
+  }
+
+  .adetail p {
+    font-size: 1.9rem;
+    padding: 2px;
+    overflow: hidden;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 80%;
+  }
+
+
+/* focus section  */
+/* select us section  */
+
+ .slist {
+  grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonial section  */
+
+
+
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+}
+
+
+
+
+
+
+
+@media screen  and (min-width : 1350px) {
+  /* Main Section */
+
+  
+  
+  
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  /* About Section  */
+
+
+  .about {
+ width: 60%;
+    padding: 0;
+  }
+
+  
+
+  .adetail {
+    padding: 5px;
+  }
+
+  .adetail p {
+    font-size: 1.4rem;
+    padding: 2px;
+    overflow: hidden;
+  }
+
+  /*  Services section  */
+
+  .sdetail {
+    width: 80%;
+  }
+
+
+/* focus section  */
+/* select us section  */
+
+ .slist {
+  grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonial section  */
+
+
+
+.scontent h1 {
+   font-size: 1.8rem;
+}
+
+}
+
+
